@@ -9,7 +9,7 @@ update_times = 0;
 
 %% Pocket updating
 for times = 1:2000
-    rng('shuffle');
+    %rng('shuffle');
     while(update_times < 50)
         pick = randi(500); %random pick a data point
         if(misclassified(W,TrainingData(pick,:))) %see if it needs correct
